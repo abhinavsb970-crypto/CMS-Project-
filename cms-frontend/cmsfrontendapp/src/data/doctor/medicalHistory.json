@@ -1,0 +1,87 @@
+[
+    {
+        "consultationId": 1,
+        "patientId": 25,
+        "date": "2026-08-20",
+        "doctorName": "Dr. Arun",
+        "symptoms": "Fever, headache and body pain",
+        "diagnosis": "Viral fever",
+        "notes": "Take adequate rest and drink plenty of fluids.",
+
+        "medicines": [
+            {
+                "medicineName": "Paracetamol",
+                "strength": "650 mg",
+                "frequency": "1-1-1",
+                "duration": "5 Days",
+                "quantity": 15,
+                "route": "Oral",
+                "instructions": "After Food"
+            }
+        ],
+
+        "labTests": [
+            {
+                "testName": "Complete Blood Count (CBC)",
+                "department": "Hematology",
+                "status": "Completed",
+                "result": "Normal"
+            }
+        ]
+    },
+
+    {
+        "consultationId": 2,
+        "patientId": 25,
+        "date": "2026-07-15",
+        "doctorName": "Dr. Meera",
+        "symptoms": "Stomach pain and acidity",
+        "diagnosis": "Gastritis",
+        "notes": "Avoid spicy food and maintain regular meals.",
+
+        "medicines": [
+            {
+                "medicineName": "Pantoprazole",
+                "strength": "40 mg",
+                "frequency": "1-0-0",
+                "duration": "7 Days",
+                "quantity": 7,
+                "route": "Oral",
+                "instructions": "Before Food"
+            }
+        ],
+
+        "labTests": []
+    },
+
+    {
+        "consultationId": 3,
+        "patientId": 25,
+        "date": "2026-06-10",
+        "doctorName": "Dr. Arun",
+        "symptoms": "Cough and sore throat",
+        "diagnosis": "Upper respiratory infection",
+        "notes": "Continue medication and take sufficient rest.",
+
+        "medicines": [
+            {
+                "medicineName": "Cetirizine",
+                "strength": "10 mg",
+                "frequency": "0-0-1",
+                "duration": "5 Days",
+                "quantity": 5,
+                "route": "Oral",
+                "instructions": "After Food"
+            }
+        ],
+
+        "labTests": [
+            {
+                "testName": "Complete Blood Count (CBC)",
+                "department": "Hematology",
+                "status": "Completed",
+                "result": "Normal"
+            }
+        ]
+    }
+]

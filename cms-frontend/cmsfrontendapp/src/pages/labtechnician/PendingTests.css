@@ -1,0 +1,241 @@
+/* =========================================
+   Pending Lab Tests Page
+   ========================================= */
+
+.pending-tests-page {
+    min-height: calc(100vh - 82px);
+    padding: 32px;
+    background: #f5f7fb;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Page Header
+   ========================================= */
+
+.pending-tests-header {
+    margin-bottom: 28px;
+}
+
+.pending-tests-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.pending-tests-header p {
+    margin: 7px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================================
+   Error
+   ========================================= */
+
+.pending-tests-error {
+    margin: 0 0 20px;
+    padding: 10px 12px;
+    border-radius: 7px;
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    font-size: 14px;
+}
+
+/* =========================================
+   Main Card
+   ========================================= */
+
+.pending-tests-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+}
+
+/* =========================================
+   List Header
+   ========================================= */
+
+.pending-tests-list-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.pending-tests-list-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.pending-tests-list-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* =========================================
+   Refresh Button
+   ========================================= */
+
+.pending-refresh-button {
+    padding: 8px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pending-refresh-button:hover {
+    background: #f9fafb;
+}
+
+/* =========================================
+   Table
+   ========================================= */
+
+.pending-tests-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.pending-tests-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pending-tests-table th {
+    padding: 13px 24px;
+    text-align: left;
+    background: #f9fafb;
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.pending-tests-table td {
+    padding: 16px 24px;
+    border-top: 1px solid #f0f1f3;
+    color: #374151;
+    font-size: 14px;
+}
+
+.pending-tests-table tbody tr:hover {
+    background: #fafafa;
+}
+
+/* =========================================
+   Request ID
+   ========================================= */
+
+.pending-request-id {
+    color: #2563eb;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* =========================================
+   Test Name
+   ========================================= */
+
+.pending-test-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.pending-test-code {
+    margin-top: 4px;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+/* =========================================
+   Status
+   ========================================= */
+
+.pending-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pending-status.pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.pending-status.in-progress {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+/* =========================================
+   View Button
+   ========================================= */
+
+.pending-view-button {
+    padding: 7px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+    background: #ffffff;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+}
+
+.pending-view-button:hover {
+    background: #eff6ff;
+}
+
+/* =========================================
+   Empty / Loading
+   ========================================= */
+
+.pending-tests-empty {
+    padding: 40px 24px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+
+@media (max-width: 768px) {
+    .pending-tests-page {
+        padding: 20px;
+    }
+
+    .pending-tests-list-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .pending-refresh-button {
+        width: 100%;
+    }
+
+    .pending-tests-table th,
+    .pending-tests-table td {
+        padding: 12px 16px;
+    }
+}

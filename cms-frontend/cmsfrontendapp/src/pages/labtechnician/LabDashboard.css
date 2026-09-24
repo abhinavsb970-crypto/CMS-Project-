@@ -1,0 +1,105 @@
+/* =========================================
+   Lab Technician Dashboard
+   ========================================= */
+
+.lab-dashboard-content {
+    min-height: calc(100vh - 82px);
+    padding: 32px;
+    background: #f5f7fb;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Dashboard Header
+   ========================================= */
+
+.lab-dashboard-header {
+    margin-bottom: 28px;
+}
+
+.lab-dashboard-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.lab-dashboard-header p {
+    margin: 7px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================================
+   Error
+   ========================================= */
+
+.lab-dashboard-error {
+    margin: 0 0 20px;
+    padding: 10px 12px;
+    border-radius: 7px;
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    font-size: 14px;
+}
+
+/* =========================================
+   Dashboard Cards
+   ========================================= */
+
+.lab-dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lab-dashboard-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+    min-height: 150px;
+    box-sizing: border-box;
+}
+
+.lab-dashboard-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.lab-dashboard-card p {
+    margin: 7px 0 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.lab-dashboard-card strong {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+
+@media (max-width: 900px) {
+    .lab-dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .lab-dashboard-content {
+        padding: 20px;
+    }
+
+    .lab-dashboard-header h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,205 @@
+/* =========================================
+   Lab Technician Layout
+   ========================================= */
+
+.lab-layout {
+    min-height: 100vh;
+    display: flex;
+    background: #f5f7fb;
+}
+
+/* =========================================
+   Sidebar
+   ========================================= */
+
+.lab-sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* Sidebar Header */
+
+.lab-sidebar-header {
+    padding: 24px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.lab-sidebar-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.lab-sidebar-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* =========================================
+   Sidebar Menu
+   ========================================= */
+
+.lab-sidebar-menu {
+    padding: 18px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.lab-sidebar-item {
+    width: 100%;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 7px;
+    background: transparent;
+    color: #374151;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.lab-sidebar-item:hover {
+    background: #f3f4f6;
+}
+
+.lab-sidebar-item.active {
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* =========================================
+   Logout
+   ========================================= */
+
+.lab-logout-button {
+    margin: auto 12px 20px;
+    padding: 11px 14px;
+    border: 1px solid #fecaca;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #b91c1c;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.lab-logout-button:hover {
+    background: #fef2f2;
+    border-color: #fca5a5;
+}
+
+/* =========================================
+   Main Content
+   ========================================= */
+
+.lab-main {
+    margin-left: 240px;
+    width: calc(100% - 240px);
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Header
+   ========================================= */
+
+.lab-header {
+    min-height: 82px;
+    padding: 18px 32px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.lab-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.lab-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* =========================================
+   Logged-in User
+   ========================================= */
+
+.lab-user {
+    display: flex;
+    align-items: center;
+    padding: 9px 14px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+}
+
+.lab-user span {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+
+@media (max-width: 768px) {
+    .lab-sidebar {
+        width: 200px;
+    }
+
+    .lab-main {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+
+    .lab-header {
+        padding: 18px 20px;
+    }
+
+    .lab-header h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .lab-sidebar {
+        width: 180px;
+    }
+
+    .lab-main {
+        margin-left: 180px;
+        width: calc(100% - 180px);
+    }
+
+    .lab-header {
+        padding: 15px;
+    }
+
+    .lab-user {
+        display: none;
+    }
+}

@@ -1,0 +1,532 @@
+.enter-result-page {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.enter-result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.enter-result-header h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.enter-result-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.enter-result-back-button {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.enter-result-back-button:hover {
+    background: #f3f4f6;
+}
+
+
+/* =========================================================
+   TEST INFORMATION CARD
+   ========================================================= */
+
+.enter-result-info-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.enter-result-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.enter-result-info-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.enter-result-info-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.enter-result-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 13px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+}
+
+.enter-result-status.pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.enter-result-status.in-progress {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.enter-result-status.completed {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.enter-result-status.cancelled {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+
+/* =========================================================
+   INFORMATION GRID
+   ========================================================= */
+
+.enter-result-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.enter-result-info-item {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 14px 16px;
+}
+
+.enter-result-info-item span {
+    display: block;
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.enter-result-info-item strong {
+    display: block;
+    color: #111827;
+    font-size: 15px;
+    word-break: break-word;
+}
+
+.request-value {
+    color: #2563eb !important;
+}
+
+
+/* =========================================================
+   RESULT CARD
+   ========================================================= */
+
+.enter-result-form-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.enter-result-form-header {
+    margin-bottom: 22px;
+}
+
+.enter-result-form-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.enter-result-form-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   FORM GROUP
+   ========================================================= */
+
+.enter-result-form-group {
+    margin-bottom: 20px;
+}
+
+.enter-result-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.enter-result-form-group label span {
+    color: #dc2626;
+}
+
+.enter-result-form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #111827;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.enter-result-form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.enter-result-form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+.enter-result-form-group textarea[readonly] {
+    background: #f9fafb;
+    color: #374151;
+    cursor: default;
+}
+
+.enter-result-form-group small {
+    display: block;
+    margin-top: 7px;
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   EXISTING RESULT
+   ========================================================= */
+
+.existing-result-container {
+    width: 100%;
+}
+
+.existing-result-container .enter-result-form-group textarea {
+    background: #f9fafb;
+}
+
+
+/* =========================================================
+   BUTTON ACTIONS
+   ========================================================= */
+
+.enter-result-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   CANCEL BUTTON
+   ========================================================= */
+
+.enter-result-cancel-button {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.enter-result-cancel-button:hover:not(:disabled) {
+    background: #f3f4f6;
+}
+
+.enter-result-cancel-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   SAVE RESULT BUTTON
+   ========================================================= */
+
+.enter-result-save-button {
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.enter-result-save-button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.enter-result-save-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   EDIT RESULT BUTTON
+   ========================================================= */
+
+.enter-result-edit-button {
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.enter-result-edit-button:hover:not(:disabled) {
+    background: #1d4ed8;
+}
+
+.enter-result-edit-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   COMPLETE TEST CARD
+   ========================================================= */
+
+.complete-test-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 22px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.complete-test-card h2 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.complete-test-card p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   COMPLETE BUTTON
+   ========================================================= */
+
+.complete-test-button {
+    border: none;
+    background: #059669;
+    color: #ffffff;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.2s ease;
+}
+
+.complete-test-button:hover:not(:disabled) {
+    background: #047857;
+}
+
+.complete-test-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+   ========================================================= */
+
+.enter-result-success {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #047857;
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ERROR MESSAGE
+   ========================================================= */
+
+.enter-result-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #b91c1c;
+    padding: 12px 14px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   LOCKED RESULT MESSAGE
+   ========================================================= */
+
+.enter-result-locked-message {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    color: #6b7280;
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
+.enter-result-loading {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .enter-result-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .complete-test-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .complete-test-button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .enter-result-page {
+        padding: 20px;
+    }
+
+    .enter-result-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .enter-result-back-button {
+        width: 100%;
+    }
+
+    .enter-result-info-header {
+        flex-direction: column;
+    }
+
+    .enter-result-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .enter-result-actions {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .enter-result-actions button {
+        width: 100%;
+    }
+}

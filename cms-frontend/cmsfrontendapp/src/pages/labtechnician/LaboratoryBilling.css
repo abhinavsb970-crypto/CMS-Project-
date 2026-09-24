@@ -1,0 +1,280 @@
+.laboratory-billing-page {
+  padding: 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.laboratory-billing-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.laboratory-billing-page-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #1f2937;
+}
+
+.laboratory-billing-page-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.laboratory-billing-refresh-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.laboratory-billing-refresh-button:hover {
+  background: #1d4ed8;
+}
+
+/* SEARCH */
+
+.laboratory-billing-search-card {
+  display: flex;
+  align-items: flex-end;
+  gap: 18px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.laboratory-billing-search-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.laboratory-billing-search-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.laboratory-billing-search-group select,
+.laboratory-billing-search-group input {
+  height: 42px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.laboratory-billing-search-group select {
+  min-width: 150px;
+}
+
+.laboratory-billing-search-input-group {
+  flex: 1;
+}
+
+.laboratory-billing-search-group input:focus,
+.laboratory-billing-search-group select:focus {
+  border-color: #2563eb;
+}
+
+.laboratory-billing-clear-button {
+  height: 42px;
+  padding: 0 18px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #374151;
+}
+
+.laboratory-billing-clear-button:hover {
+  background: #f3f4f6;
+}
+
+/* TABLE */
+
+.laboratory-billing-table-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.laboratory-billing-table-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.laboratory-billing-table-header h3 {
+  margin: 0 0 5px;
+  color: #1f2937;
+  font-size: 18px;
+}
+
+.laboratory-billing-table-header span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.laboratory-billing-table-wrapper {
+  overflow-x: auto;
+}
+
+.laboratory-billing-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+}
+
+.laboratory-billing-table th {
+  background: #f9fafb;
+  padding: 13px 14px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.laboratory-billing-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 13px;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.laboratory-billing-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.laboratory-billing-table td strong {
+  color: #111827;
+}
+
+/* PAYMENT STATUS */
+
+.laboratory-billing-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.laboratory-billing-status.paid {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.laboratory-billing-status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.laboratory-billing-status.cancelled {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* VIEW BUTTON */
+
+.laboratory-billing-view-button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.laboratory-billing-view-button:hover {
+  background: #1d4ed8;
+}
+
+/* LOADING / EMPTY / ERROR */
+
+.laboratory-billing-loading,
+.laboratory-billing-empty {
+  padding: 60px 20px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.laboratory-billing-empty h3 {
+  margin: 0 0 8px;
+  color: #374151;
+}
+
+.laboratory-billing-empty p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.laboratory-billing-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  padding: 12px 15px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .laboratory-billing-page {
+    padding: 20px;
+  }
+
+  .laboratory-billing-page-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .laboratory-billing-search-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .laboratory-billing-search-group select {
+    width: 100%;
+  }
+
+  .laboratory-billing-clear-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .laboratory-billing-page {
+    padding: 15px;
+  }
+
+  .laboratory-billing-page-header {
+    flex-direction: column;
+  }
+
+  .laboratory-billing-refresh-button {
+    width: 100%;
+  }
+
+  .laboratory-billing-page-header h2 {
+    font-size: 23px;
+  }
+}

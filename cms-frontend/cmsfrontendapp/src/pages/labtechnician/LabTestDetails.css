@@ -1,0 +1,342 @@
+/* =========================================
+   Lab Test Details Page
+   ========================================= */
+
+.lab-test-details-page {
+    min-height: calc(100vh - 82px);
+    padding: 32px;
+    background: #f5f7fb;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   Page Header
+   ========================================= */
+
+.lab-test-details-header {
+    margin-bottom: 28px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lab-test-details-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.lab-test-details-header p {
+    margin: 7px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================================
+   Back Button
+   ========================================= */
+
+.lab-test-back-button {
+    padding: 9px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lab-test-back-button:hover {
+    background: #f9fafb;
+}
+
+/* =========================================
+   Details Card
+   ========================================= */
+
+.lab-test-details-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+    margin-bottom: 24px;
+}
+
+/* =========================================
+   Card Header
+   ========================================= */
+
+.lab-test-details-card-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lab-test-details-card-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.lab-test-details-card-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* =========================================
+   Status
+   ========================================= */
+
+.lab-test-status {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.lab-test-status.pending {
+    background: #fff7ed;
+    color: #c2410c;
+}
+
+.lab-test-status.in-progress {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.lab-test-status.completed {
+    background: #ecfdf5;
+    color: #047857;
+}
+
+.lab-test-status.cancelled {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+/* =========================================
+   Details Grid
+   ========================================= */
+
+.lab-test-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* =========================================
+   Detail Item
+   ========================================= */
+
+.lab-test-detail-item {
+    padding: 20px 24px;
+    border-bottom: 1px solid #f0f1f3;
+}
+
+.lab-test-detail-item:nth-child(odd) {
+    border-right: 1px solid #f0f1f3;
+}
+
+.lab-test-detail-label {
+    display: block;
+    margin-bottom: 7px;
+
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.lab-test-detail-value {
+    display: block;
+
+    color: #1f2937;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.lab-test-detail-value.request-id {
+    color: #2563eb;
+}
+
+/* =========================================
+   Actions Card
+   ========================================= */
+
+.lab-test-actions-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lab-test-actions-card h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.lab-test-actions-card p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+/* =========================================
+   Action Buttons
+   ========================================= */
+
+.lab-test-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lab-enter-result-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lab-enter-result-button:hover {
+    background: #1d4ed8;
+}
+
+.lab-test-secondary-button {
+    padding: 10px 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lab-test-secondary-button:hover {
+    background: #f9fafb;
+}
+
+/* =========================================
+   Loading
+   ========================================= */
+
+.lab-test-details-loading {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 40px 24px;
+
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* =========================================
+   Error
+   ========================================= */
+
+.lab-test-details-error {
+    margin-bottom: 20px;
+    padding: 12px 14px;
+
+    border-radius: 7px;
+
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+
+    font-size: 14px;
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+
+@media (max-width: 768px) {
+    .lab-test-details-page {
+        padding: 20px;
+    }
+
+    .lab-test-details-header {
+        flex-direction: column;
+    }
+
+    .lab-test-back-button {
+        width: 100%;
+    }
+
+    .lab-test-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-test-detail-item:nth-child(odd) {
+        border-right: none;
+    }
+
+    .lab-test-actions-card {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .lab-test-actions {
+        flex-direction: column;
+    }
+
+    .lab-enter-result-button,
+    .lab-test-secondary-button {
+        width: 100%;
+    }
+}
+
+```css
+/* =========================================================
+   GENERATE REPORT BUTTON
+   ========================================================= */
+
+.lab-generate-report-button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.lab-generate-report-button:hover {
+  background: #000;
+}
+
+.lab-generate-report-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+```

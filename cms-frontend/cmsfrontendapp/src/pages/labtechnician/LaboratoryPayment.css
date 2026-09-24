@@ -1,0 +1,419 @@
+/* =========================================================
+   LABORATORY PAYMENT PAGE
+   ========================================================= */
+
+.laboratory-payment-page {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.laboratory-payment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.laboratory-payment-header h2 {
+    margin: 0 0 6px;
+    font-size: 28px;
+}
+
+.laboratory-payment-header p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.laboratory-payment-back-button {
+    border: none;
+    background: #f1f1f1;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.laboratory-payment-back-button:hover {
+    background: #e5e5e5;
+}
+
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.laboratory-payment-card {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 14px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   CARD HEADER
+   ========================================================= */
+
+.laboratory-payment-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.laboratory-payment-card-header h3 {
+    margin: 0 0 5px;
+    font-size: 21px;
+}
+
+.laboratory-payment-card-header p {
+    margin: 0;
+    color: #777;
+}
+
+
+/* =========================================================
+   STATUS
+   ========================================================= */
+
+.laboratory-payment-status {
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.laboratory-payment-status-pending {
+    background: #fff4d6;
+    color: #9a6a00;
+}
+
+.laboratory-payment-status-paid {
+    background: #e3f7e8;
+    color: #1f7a36;
+}
+
+
+/* =========================================================
+   INFORMATION
+   ========================================================= */
+
+.laboratory-payment-information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.laboratory-payment-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.laboratory-payment-field span {
+    font-size: 12px;
+    color: #777;
+}
+
+.laboratory-payment-field strong {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   AMOUNT
+   ========================================================= */
+
+.laboratory-payment-amount {
+    margin-top: 30px;
+    padding: 22px;
+    border-radius: 12px;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.laboratory-payment-amount span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.laboratory-payment-amount strong {
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   PAYMENT METHOD
+   ========================================================= */
+
+.laboratory-payment-method-section {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.laboratory-payment-method-section h3 {
+    margin: 0 0 5px;
+}
+
+.laboratory-payment-method-section p {
+    margin: 0 0 20px;
+    color: #777;
+}
+
+
+.laboratory-payment-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+
+.laboratory-payment-method {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.laboratory-payment-method:hover {
+    border-color: #999;
+}
+
+.laboratory-payment-method.selected {
+    border: 2px solid #333;
+}
+
+.laboratory-payment-method input {
+    width: 18px;
+    height: 18px;
+}
+
+.laboratory-payment-method div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.laboratory-payment-method strong {
+    font-size: 15px;
+}
+
+.laboratory-payment-method span {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* =========================================================
+   PAY BUTTON
+   ========================================================= */
+
+.laboratory-payment-confirm-button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 9px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.laboratory-payment-confirm-button:hover {
+    background: #000;
+}
+
+.laboratory-payment-confirm-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* =========================================================
+   PAYMENT COMPLETED
+   ========================================================= */
+
+.laboratory-payment-completed {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+}
+
+.laboratory-payment-check {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background: #e3f7e8;
+    color: #1f7a36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.laboratory-payment-completed h3 {
+    margin: 0 0 8px;
+    font-size: 22px;
+}
+
+.laboratory-payment-completed p {
+    margin: 0;
+    color: #777;
+}
+
+
+/* =========================================================
+   PAID DETAILS
+   ========================================================= */
+
+.laboratory-payment-paid-details {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 25px;
+}
+
+.laboratory-payment-paid-details div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.laboratory-payment-paid-details span {
+    color: #777;
+    font-size: 12px;
+}
+
+.laboratory-payment-paid-details strong {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   COMPLETED ACTIONS
+   ========================================================= */
+
+.laboratory-payment-completed-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.laboratory-payment-view-bill-button,
+.laboratory-payment-view-report-button {
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.laboratory-payment-view-bill-button {
+    border: none;
+    background: #222;
+    color: white;
+}
+
+.laboratory-payment-view-report-button {
+    border: 1px solid #ccc;
+    background: white;
+}
+
+
+/* =========================================================
+   LOADING / ERROR / SUCCESS
+   ========================================================= */
+
+.laboratory-payment-loading {
+    padding: 50px;
+    text-align: center;
+    color: #777;
+}
+
+.laboratory-payment-error {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    background: #fde8e8;
+    color: #a33;
+}
+
+.laboratory-payment-success {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    background: #e3f7e8;
+    color: #1f7a36;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .laboratory-payment-page {
+        padding: 20px;
+    }
+
+    .laboratory-payment-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .laboratory-payment-card {
+        padding: 20px;
+    }
+
+    .laboratory-payment-information {
+        grid-template-columns: 1fr;
+    }
+
+    .laboratory-payment-methods {
+        grid-template-columns: 1fr;
+    }
+
+    .laboratory-payment-paid-details {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .laboratory-payment-completed-actions {
+        flex-direction: column;
+    }
+}
